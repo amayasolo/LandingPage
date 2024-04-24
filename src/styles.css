@@ -1,0 +1,230 @@
+/* Universal */
+
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --dark-bg-color: #1f2937;
+    --header-main-text-color: #f9faf8;
+    --header-link-text-color: #e5e7eb;
+    --header-logo-text-color: var(--header-main-text-color);
+    --button-color: #3882f6;
+    --info-header-text: #1f2937;
+    --quote-section-bg-color: var(--header-link-text-color);
+    --quote-text: var(--info-header-text);
+}
+
+* {
+    font-family: system-ui, -apple-system, 'San Francisco', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body, 
+.nav-bar, 
+.car-content,
+.car-left-side {
+    display: flex;
+}
+
+body, 
+.car-left-side {
+    flex-direction: column;
+}
+
+.header,
+.car-section,
+.footer {
+    background-color: var(--dark-bg-color);
+    margin: 0px;
+}
+
+.header {
+    padding: 5px;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    color: var(--header-main-text-color);
+}
+.nav-bar {
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    color: var(--header-link-text-color);
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.car-section {
+    padding: 40px 24px;
+    gap: 80px;
+}
+
+.car-content {
+    max-width: 960px;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.sign-up {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--button-color);
+    border-width: 0px;
+    border-radius: 5px;
+    color: var(--header-link-text-color);
+}
+
+.car-left-side {
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.car-left-side h1 {
+    margin: 0px;
+    width: 500px;
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--header-main-text-color);
+}
+
+.car-left-side p {
+    margin: 0px;
+    width: 400px;
+    color: var(--header-main-text-color);
+    font-weight: lighter;
+}
+
+.contact-block {
+    margin: 0px;
+    background-color: white;
+    padding: 50px;
+}
+
+.info-block {
+    background-color: white;
+    margin: 0px;
+    padding: 50px;
+}
+.quote-block {
+    background-color: var(--quote-section-bg-color);
+    padding: 100px 200px 100px 200px;
+    display: flex;
+}
+
+.quote-block, em {
+    font-size: 36px;
+    font-weight: lighter;
+    color: var(--quote-text);
+}
+
+.author {
+    font-size: 18px;
+    display: block;
+    justify-content: flex-end;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.logo {
+    padding-left: 0px;
+    font-size: 24px;
+    color: var(--header-logo-text-color);
+    opacity: .2;
+    font-style: italic;
+    margin-right: auto; /* look into this because this is what's causing left-alignment */
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.image-cards {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-cards img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.image-card {
+    border-color: var(--button-color);
+    border-radius: 25px;
+    border-style: solid;
+    width: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.call-to-action {
+    background-color: var(--button-color);
+    overflow: hidden;
+    max-width: 760px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: 15px;
+}
+
+.call-text {
+    color: var(--header-main-text-color);
+    margin-right: 30px;
+}
+
+.sign-up.two {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.dream {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+/* Images */
+.porsche {
+    width: 300px;
+    height: auto;
+}
